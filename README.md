@@ -1121,7 +1121,13 @@ df.head()
 inputs = df.drop('Survived',axis='columns')
 target = df.Survived
 
-#inputs.Sex = inputs.Sex.map({'male': 1, 'female': 2})
+# METHOD 1: inputs.Sex = inputs.Sex.map({'male': 1, 'female': 2})
+# METHOD 2: from sklearn.preprocessing import LabelEncoder
+# labelencoder_X = LabelEncoder()
+# X[ : , 0] = labelencoder_X.fit_transform(X[ : , 0])
+# X
+
+
 dummies = pd.get_dummies(inputs.Sex)
 dummies.head()
 
