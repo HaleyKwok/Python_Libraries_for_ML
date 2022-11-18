@@ -1343,6 +1343,24 @@ model.predict([[4.8,3.0,1.5,0.3]])
 ```
 
 ###### Tune Parameter
+
+Regulazation: choose a smaller-margin hyperplane if it results in a better fit to the training data.
+
+<img src ="https://miro.medium.com/max/1000/0%2A08KrYhXpVQdUXWrX">
+
+Kernal: polynomial and exponential kernals calculates the distance between the points in the higher dimension. The polynomial kernal is used when the data is not linearly separable. The exponential kernal is used when the data is not linearly separable and the data is not in the form of a circle.
+
+
+<img src = "https://miro.medium.com/max/1380/1%2AAFqQio7ZB91FZvFtuYAn-w.png">
+
+
+Gamma: defines the influence of a single training example. The larger the gamma value it tries to consider the points close to possible line are considered in calculation of the hyperplane.
+
+<img src = "https://miro.medium.com/max/1713/1%2A6HVomcqW7BWuZ2vvGOEptw.png">
+
+Margin: separation of line to the closet class points. A good margin is one where this separation is larger for both the classes.
+
+
 ```python
 # Regularization (C)
 model_C = SVC(C=1)
