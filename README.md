@@ -1344,17 +1344,17 @@ model.predict([[4.8,3.0,1.5,0.3]])
 
 ###### Tune Parameter
 
-Regulazation: choose a smaller-margin hyperplane if it results in a better fit to the training data.
+Regulazation: choose a smaller-margin hyperplane if it results in a better fit to the training data. C is the penalty parameter, which represents misclassification or error term. The misclassification or error term tells the SVM optimisation how much error is bearable. This is how you can control the trade-off between decision boundary and misclassification term. When C is high it will classify all the data points correctly, also there is a chance to overfit.
 
 <img src ="https://miro.medium.com/max/1000/0%2A08KrYhXpVQdUXWrX">
 
-Kernal: polynomial and exponential kernals calculates the distance between the points in the higher dimension. The polynomial kernal is used when the data is not linearly separable. The exponential kernal is used when the data is not linearly separable and the data is not in the form of a circle.
+Kernal: polynomial and exponential kernals calculates the distance between the points in the higher dimension. The polynomial kernal is used when the data is not linearly separable. The exponential kernal is used when the data is not linearly separable and the data is not in the form of a circle. 
 
 
 <img src = "https://miro.medium.com/max/1380/1%2AAFqQio7ZB91FZvFtuYAn-w.png">
 
 
-Gamma: defines the influence of a single training example. The larger the gamma value it tries to consider the points close to possible line are considered in calculation of the hyperplane.
+Gamma: defines the influence of a single training example. The larger the gamma value it tries to consider the points close to possible line are considered in calculation of the hyperplane. It defines how far influences the calculation of plausible line of separation. When gamma is higher, nearby points will have high influence; low gamma means far away points also be considered to get the decision boundary.
 
 <img src = "https://miro.medium.com/max/1713/1%2A6HVomcqW7BWuZ2vvGOEptw.png">
 
