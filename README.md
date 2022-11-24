@@ -1,6 +1,6 @@
 # Python_Libraries_for_ML
 
-- [Python_Libraries_for_ML](#python_libraries_for_ml)
+- [Python\_Libraries\_for\_ML](#python_libraries_for_ml)
 - [Data Preprocessing](#data-preprocessing)
 - [Supervised Learning](#supervised-learning)
   - [Regression](#regression)
@@ -30,7 +30,7 @@
       - [Lazy Learners: K-Nearest Neighbours](#lazy-learners-k-nearest-neighbours)
       - [Eager Learners: Decision Trees](#eager-learners-decision-trees)
         - [Terminologies](#terminologies-1)
-        - [Random Forest [Overfitting]](#random-forest-overfitting)
+        - [Random Forest \[Overfitting\]](#random-forest-overfitting)
       - [Eager Learners: Naïve Bayes](#eager-learners-naïve-bayes)
         - [Bernoulli, Multinomial and Gaussian Naive Bayes](#bernoulli-multinomial-and-gaussian-naive-bayes)
         - [Assumption](#assumption)
@@ -42,8 +42,8 @@
       - [Filters Methods](#filters-methods)
       - [Wrappers Methods](#wrappers-methods)
       - [Embedded Methods](#embedded-methods)
-    - [Lasso Regression/ L1 regularization [Reduce complexity]](#lasso-regression-l1-regularization-reduce-complexity)
-    - [Ridge Regression/ L2 regularization [Reduce complexity]](#ridge-regression-l2-regularization-reduce-complexity)
+    - [Lasso Regression/ L1 regularization \[Reduce complexity\]](#lasso-regression-l1-regularization-reduce-complexity)
+    - [Ridge Regression/ L2 regularization \[Reduce complexity\]](#ridge-regression-l2-regularization-reduce-complexity)
   - [Feature Extractions](#feature-extractions)
     - [Principal Component Analysis (Unsupervised Learning)](#principal-component-analysis-unsupervised-learning)
     - [Linear Discriminant Analysis](#linear-discriminant-analysis)
@@ -61,7 +61,7 @@
     - [Eclat Algorithm](#eclat-algorithm)
     - [F-P Growth Algorithm](#f-p-growth-algorithm)
 - [Hyper Parameter Tuning](#hyper-parameter-tuning)
-  - [Approach 1: Use train_test_split and manually tune parameters by trial and error](#approach-1-use-train_test_split-and-manually-tune-parameters-by-trial-and-error)
+  - [Approach 1: Use train\_test\_split and manually tune parameters by trial and error](#approach-1-use-train_test_split-and-manually-tune-parameters-by-trial-and-error)
   - [Approach 2: Use K Fold Cross validation](#approach-2-use-k-fold-cross-validation)
   - [Approach 3: Use GridSearchCV](#approach-3-use-gridsearchcv)
   - [Use RandomizedSearchCV to reduce number of iterations and with random combination of parameters.](#use-randomizedsearchcv-to-reduce-number-of-iterations-and-with-random-combination-of-parameters)
@@ -1344,7 +1344,7 @@ model.predict([[4.8,3.0,1.5,0.3]])
 
 ###### Tune Parameter
 
-Regulazation: choose a smaller-margin hyperplane if it results in a better fit to the training data. C is the penalty parameter, which represents misclassification or error term. The misclassification or error term tells the SVM optimisation how much error is bearable. This is how you can control the trade-off between decision boundary and misclassification term. When C is high it will classify all the data points correctly, also there is a chance to overfit.
+Regulazation: choose a smaller-margin hyperplane if it results in a better fit to the training data. C is the penalty parameter, which represents misclassification or error term. The misclassification or error term tells the SVM optimisation how much error is bearable. This is how you can control the trade-off between decision boundary and **misclassification** term. When C is high it will classify all the data points correctly, also there is a chance to overfit.
 
 <img src ="https://miro.medium.com/max/1000/0%2A08KrYhXpVQdUXWrX">
 
@@ -1855,7 +1855,7 @@ clf.cv_results_
 df = pd.DataFrame(clf.cv_results_)
 df
 
-df[['param_C','param_kernel','mean_test_score']]
+df[['param_C','param_kernel','mean_test_score']] # the index from the cv_results_
 
 clf.best_params_
 
