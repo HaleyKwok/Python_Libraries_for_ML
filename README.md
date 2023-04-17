@@ -76,4 +76,5 @@ We develop this repository for Self-learning purposes, so it can only be used fo
 ---
 
 Copyright © [Haley Kwok](https://github.com/HaleyKwok). All rights reserved.
-Credit: Materials learned from @Codebasics (https://github.com/codebasics)
+<br>
+Credit: Materials learned from @[Codebasics] (https://github.com/codebasics)
