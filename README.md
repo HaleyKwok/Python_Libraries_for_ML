@@ -23,17 +23,26 @@ Machine Learning has become an increasingly popular field in recent years, with 
 
 - Evaluating a Classification Model: This section covers different evaluation metrics such as log loss or cross-entropy loss, confusion matrix, and AUC-ROC curve.
 
-- Linear Model: This section covers different linear models such as logistic regression, binomial, multinomial, ordinal.
+- [Linear Model](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Supervised%20Learning/Classification/Logistics%20Regression): This section covers different linear models such as logistic regression, binomial, multinomial, ordinal.
 
 - [Non-linear Model](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning/KNN): This section covers different non-linear models such as K-Nearest Neighbors (KNN), decision trees, random forest, and Naïve Bayes.
 
-- Dimensionality Reduction: This section covers different dimensionality reduction techniques such as filters, wrappers, embedded methods, Lasso Regression, Ridge Regression, feature extraction, and principal component analysis (PCA).
+- Dimensionality Reduction: This section covers different dimensionality reduction techniques such as filters, wrappers, embedded methods, [Lasso Regression](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/Supervised%20Learning/%5BDim%5DL1%20and%20L2%20Regularization%20%7C%20Lasso%2C%20Ridge%20Regression.ipynb), [Ridge Regression](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/Supervised%20Learning/%5BDim%5DL1%20and%20L2%20Regularization%20%7C%20Lasso%2C%20Ridge%20Regression.ipynb), feature extraction, and [principal component analysis (PCA)](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning/%5Bfit%5DPCA).
 
 - [Unsupervised Learning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning): This section covers different unsupervised learning techniques such as clustering, partitioning clustering, density-based clustering, distribution model-based clustering, hierarchical clustering/agglomerative hierarchical clustering, fuzzy clustering, and association.
 
 - [Hyperparameter Tuning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Hyperparameter%20Tuning): This section covers different approaches for hyperparameter tuning such as train_test_split, K Fold Cross validation, GridSearchCV, RandomizedSearchCV, and using different models with different parameters.
 
-- Bagging/Ensemble Learning: This section covers different ensemble learning techniques such as bagging.
+- [Bagging/Ensemble Learning](): This section covers different ensemble learning techniques such as bagging.
+
+
+---
+
+## 📋 Notes
+
+[HTML format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.html)
+[Markdown format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.md)
+[PDF format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.pdf)
 
 ---
 
@@ -57,7 +66,7 @@ The authors or copyright holders are not be liable for any claim, damages or oth
 
 
 ## 📢 Disclaimer
-We develop this repository for Assignment purposes, so it can only be used for personal/research/non-commercial purposes.
+We develop this repository for Self-learning purposes, so it can only be used for personal/research/non-commercial purposes.
 
 ---
 
