@@ -1,3 +1,4 @@
+<<<<<<<< HEAD:MachineLearning.md
 ---
 html:
     toc: true
@@ -102,474 +103,59 @@ In the real-world, supervised learning can be used for `Risk Assessment`, `Image
 - Multicollinearity: If the independent variables are highly correlated with each other than other variables, then such condition is called Multicollinearity. It should not be present in the dataset, because it creates problem while ranking the most affecting variable.
  
 - Underfitting and Overfitting: If our algorithm works well with the training dataset but not well with test dataset, then such problem is called Overfitting. And if our algorithm does not perform well even with training dataset, then such problem is called underfitting.
+========
+# Python Libraries for Machine Learning
+
+## 📍 Mission
+The mission of this repository is to provide a comprehensive and organized collection of information on commonly used Python libraries in the field of Machine Learning. The repository is designed to be user-friendly and easily accessible, with each section covering a specific topic related to Machine Learning, such as data preprocessing, supervised learning, and hyperparameter tuning. Our goal is to enable individuals, whether they are beginners or experts in the field of Machine Learning, to find the information they need quickly and efficiently. We strive to ensure that the information in this repository is up-to-date and accurate, so that users can confidently rely on it in their work and research.
+>>>>>>>> 0de57b29d9f6009164ad5b23088f6f6afdfbb5e0:README.md
 
 ---
 
-### Linear Regression
-#### Simple Linear Regression
-The key point in Simple Linear Regression is that the dependent variable must be a continuous/real value. However, the independent variable can be measured on continuous or categorical values.
+## 🔆 Introduction
 
-A single Independent/Predictor(x) variable is used to model the response variable (Y)
+Machine Learning has become an increasingly popular field in recent years, with applications ranging from speech recognition and image classification to fraud detection and natural language processing. As the field has grown, so too have the number of Python libraries available to developers and researchers. This repository is a collection of information on some of the most commonly used Python libraries in the field of Machine Learning, organized into sections based on specific topics. Whether you are new to Machine Learning or an experienced practitioner, this repository is a valuable resource that can help you find the right library for your needs. With information on topics such as data preprocessing, supervised learning, and hyperparameter tuning, this repository provides a comprehensive overview of the Python libraries that are essential to anyone working in the field of Machine Learning.
 
->$$ Y = b_0+b_1x $$
-Y = dependent variables (target variables),
-X = Independent variables (predictor variables),
-a and b are the linear coefficients
+---
 
+## 🥳 Gallery
 
-Steps: 
-Data Pre-processing Steps
-Fitting the MLR model to the training set
-Predicting the result of the test set
+- [Data Preprocessing](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/6%20One-hot%20Encoder.ipynb): This section covers the basics of data preprocessing in Machine Learning.
 
-#### Multiple Linear Regression
-More than one predictor variable to predict the response variable
+- [Supervised Learning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Supervised%20Learning): This section covers the basics of supervised learning in Machine Learning.
 
->$$
-Y = b_0+b_1x+ b_2x+ b_3x+.....+ b_nx
-$$
+- [Regression](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Supervised%20Learning/Linear%20Regression): This section covers different regression techniques such as linear regression, simple linear regression, multiple linear regression, polynomial regression, support vector regression, and decision trees regression.
 
-import dataset
-```python\
+- [Classification](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Supervised%20Learning/Classification): This section covers the basics of classification in Machine Learning, binary and multi-class classifier, and the different learners in classification problems such as lazy and eager learners.
 
-import pandas as pd
-import numpy as npdf = pd.read_csv('/Users/haleyk/Documents/Python_Libraries_for_ML/Python_Libraries_for_ML/Supervised Learning/Linear Regression/homeprices.csv.xls')
+- Evaluating a Classification Model: This section covers different evaluation metrics such as log loss or cross-entropy loss, confusion matrix, and AUC-ROC curve.
 
-area	bedrooms	age	price
-0	2600	3.0	20	550000
-1	3000	4.0	15	565000
-2	3200	NaN	18	610000
-3	3600	3.0	30	595000
-4	4000	5.0	8	760000
-5	4100	6.0	8	810000
-```
-remove NA
-```python
+- [Linear Model](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Supervised%20Learning/Classification/Logistics%20Regression): This section covers different linear models such as logistic regression, binomial, multinomial, ordinal.
 
-import math
-median_bedrooms = math.floor(df.bedrooms.median())
-median_bedrooms
+- [Non-linear Model](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning/KNN): This section covers different non-linear models such as K-Nearest Neighbors (KNN), decision trees, random forest, and Naïve Bayes.
 
-df.bedrooms = df.bedrooms.fillna(median_bedrooms) # clean your data, Data Preprocessing: Fill NA values with median value of a column
-df
+- Dimensionality Reduction: This section covers different dimensionality reduction techniques such as filters, wrappers, embedded methods, [Lasso Regression](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/Supervised%20Learning/%5BDim%5DL1%20and%20L2%20Regularization%20%7C%20Lasso%2C%20Ridge%20Regression.ipynb), [Ridge Regression](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/Supervised%20Learning/%5BDim%5DL1%20and%20L2%20Regularization%20%7C%20Lasso%2C%20Ridge%20Regression.ipynb), feature extraction, and [principal component analysis (PCA)](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning/%5Bfit%5DPCA).
 
-	area	bedrooms	age	price
-0	2600	3.0	20	550000
-1	3000	4.0	15	565000
-2	3200	4.0	18	610000
-3	3600	3.0	30	595000
-4	4000	5.0	8	760000
-5	4100	6.0	8	810000
-```
-import model to find the relationship between area, bedrooms, age, and the price
+- [Unsupervised Learning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning): This section covers different unsupervised learning techniques such as clustering, partitioning clustering, density-based clustering, distribution model-based clustering, hierarchical clustering/agglomerative hierarchical clustering, fuzzy clustering, and association.
 
-```python
-from sklearn import linear_model
-reg = linear_model.LinearRegression()
-reg.fit(df[['area','bedrooms','age']],df.price)
+- [Hyperparameter Tuning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Hyperparameter%20Tuning): This section covers different approaches for hyperparameter tuning such as train_test_split, K Fold Cross validation, GridSearchCV, RandomizedSearchCV, and using different models with different parameters.
 
-"\nfrom sklearn.linear_model import LinearRegression\nreg = LinearRegression()\nreg.fit(df[['area','bedrooms','age']], df.price)\n"
-```
-this is a 2D array of shape (n_targets, n_features),
-see how different factor change the price 
-```python
-reg.coef_
-reg.intercept_
-reg.predict([[3000,3,40]]) # 3000	4.0	15	565000 Find price of home with 3000 sqr ft area, 3 bedrooms, 40 year old
-
-# return
-array([498408.25158031])
-
-reg.predict([[2500,4,5]]) # 2600	3.0	20	550000 Find price of home with 2500 sqr ft area, 4 bedrooms, 5 year old
-
-# return
-array([578876.03748933])
-```
-
-#### Polynomial Regression
-
-Data points are arranged in a non-linear fashion, we need the Polynomial Regression model
-
-
-
->$$
-Y = b_0+b_1x+ b_2x^2+ b_3x^3+.....+ b_nx^n
-$$
-Y is the predicted/target output, b0, b1,... bn are the regression coefficients. x is our independent/input variable.
-
-
-
-![请添加图片描述](https://img-blog.csdnimg.cn/0632e0cd678148f7b2c08c1cae2673ef.png)
-[Photo Source](https://www.javatpoint.com/machine-learning-polynomial-regression)
-
-
-Steps: 
-1. Data Pre-processing
-
-```python
-#importing libraries  
-import numpy as np
-import matplotlib.pyplot as plt 
-import pandas as pd  
-  
-#importing datasets  
-df = pd.read_csv('/Users/haleyk/Documents/Python_Libraries_for_ML/Python_Libraries_for_ML/Supervised Learning/Linear Regression/Position_Salaries.csv')
-df
-
-# return
-
-Position	Level	Salary
-0	Business Analyst	1	45000
-1	Junior Consultant	2	50000
-2	Senior Consultant	3	60000
-3	Manager	4	80000
-4	Country Manager	5	110000
-5	Region Manager	6	150000
-6	Partner	7	200000
-7	Senior Partner	8	300000
-8	C-level	9	500000
-9	CEO	10	1000000
-
-#Extracting Independent and dependent Variable  
-X = df.iloc[:, 1:2].values  # level
-y = df.iloc[:, 2].values  # salary
-```
-
-2. Build a Linear Regression model and fit it to the dataset
-
-```python
-#Fitting the Linear Regression to the dataset  
-from sklearn.linear_model import LinearRegression  
-lin_regs= LinearRegression()  
-lin_regs.fit(X,y)  
-```
-
-3. Build a Polynomial Regression model and fit it to the dataset
-
-```python
-#Fitting the Polynomial regression to the dataset  
-from sklearn.preprocessing import PolynomialFeatures  
-poly_regs= PolynomialFeatures(degree= 2)  # the polynomial degree depends on our choice
-x_poly= poly_regs.fit_transform(X)  # converting our feature matrix into polynomial feature matrix
-lin_reg_2 =LinearRegression()  
-lin_reg_2.fit(x_poly, y)  
-```
-
-4. Visualize the result for Linear Regression and Polynomial Regression model
-
-```python
-#Visulaizing the result for Linear Regression model  
-plt.scatter(X,y,color="blue")  
-plt.plot(X,lin_regs.predict(X), color="red")  
-plt.title("Bluff detection model(Linear Regression)")  
-plt.xlabel("Position Levels")  
-plt.ylabel("Salary")  
-plt.show()  
-```
-
-
-![请添加图片描述](https://img-blog.csdnimg.cn/a641d03e1b034cfc9fffbcf15dc9e6f8.png#pic_center)
-
-```python
-#Visulaizing the result for Polynomial Regression  
-plt.scatter(X,y,color="blue")  
-plt.plot(X, lin_reg_2.predict(poly_regs.fit_transform(X)), color="red")
-plt.title("Bluff detection model(Polynomial Regression)")  
-plt.xlabel("Position Levels")  
-plt.ylabel("Salary")  
-plt.show()  
-```
-
-
-
-![请添加图片描述](https://img-blog.csdnimg.cn/b26e4f381cd64ccba1259a592f389be5.png#pic_center)
-
-```python
-#Fitting the Polynomial regression to the dataset by degree=3
-from sklearn.preprocessing import PolynomialFeatures  
-poly_regs= PolynomialFeatures(degree= 3)  # the polynomial degree depends on our choice
-x_poly= poly_regs.fit_transform(X)  # converting our feature matrix into polynomial feature matrix
-lin_reg_2 =LinearRegression()  
-lin_reg_2.fit(x_poly, y)  
-
-#Visulaizing the result for Polynomial Regression  
-plt.scatter(X,y,color="blue")  
-plt.plot(X, lin_reg_2.predict(poly_regs.fit_transform(X)), color="red")
-plt.title("Bluff detection model(Polynomial Regression)")  
-plt.xlabel("Position Levels")  
-plt.ylabel("Salary")  
-plt.show()  
-```
-![请添加图片描述](https://img-blog.csdnimg.cn/d0117689420642e1a2180231784ace32.png#pic_center)
-
-when degree=4, the curve is smoother and more accurate
-
-![请添加图片描述](https://img-blog.csdnimg.cn/a23ff937624043ff82ce96505c8c58a8.png#pic_center)
-
-
-
-5. Predicting the output
-
-```python
-#Predicting the final result with the Linear Regression model:
-lin_pred = lin_regs.predict([[6.5]])  
-print(lin_pred)  
-
-# return
-[330378.78787879]
-
-#Predicting the final result with the Polynomial Regression model:
-poly_pred = lin_reg_2.predict(poly_regs.fit_transform([[6.5]]))  
-print(poly_pred)  
-
-# return
-[158862.45265158]
-```
-
-
-
-
-
-#### Support Vector Regression
-#### Decision Trees Regression
+- [Bagging/Ensemble Learning](): This section covers different ensemble learning techniques such as bagging.
 
 
 ---
 
-## Classification
-- the output variable is categorical
+## 📋 Notes
 
-### Binary Classifier
-If the classification problem has only two possible outcomes, then it is called as Binary Classifier.
-Examples: `Yes-No`, `Male-Female`, `True-false`, etc.
-
-### Multi-class Classifier
-If a classification problem has more than two outcomes, then it is called as Multi-class Classifier.
-Example: Classifications of types of crops, Classification of types of music.
-
-
-## Learners in Classification Problems
-
-
-### Lazy Learners
-Lazy Learner firstly stores the training dataset and wait until it receives the test dataset. In Lazy learner case, classification is done on the basis of the most related data stored in the training dataset. `It takes less time in training but more time for predictions.`
-Example: K-NN algorithm, Case-based reasoning
-
-### Eager Learners
-Eager Learners develop a classification model based on a training dataset before receiving a test dataset. Opposite to Lazy learners, `Eager Learner takes more time in learning, and less time in prediction.` 
-Example: Decision Trees, Naïve Bayes, ANN.
-
-
-## Evaluating a Classification model
-
-### 1. Log Loss or Cross-Entropy Loss
-It is used for evaluating the performance of a classifier, whose output is a probability value between the 0 and 1.
-
-For a good binary Classification model, the value of log loss should be near to 0.
-
-
-### 2. Confusion Matrix
-
-![请添加图片描述](https://img-blog.csdnimg.cn/a66e60f17d744cfcae632dcf2a195a56.png)
-
-- True Negative: Model has given prediction No, and the real or actual value was also No.
-- True Positive: The model has predicted yes, and the actual value was also true.
-- False Negative: The model has predicted no, but the actual value was Yes, it is also called as Type-II error.
-- False Positive: The model has predicted Yes, but the actual value was No. It is also called a Type-I error.
-
-
-```python
-y_predicted = model.predict(X_test)
-from sklearn.metrics import confusion matrix
-cm = confusion_matrix(y_test, y_predicted)
-import seaborn as sn
-plt.figure(figsize = (10,7))
-sn.heatmap(cm, annot = True)
-```
-
-### 3. AUC-ROC curve
-ROC curve stands for Receiver Operating Characteristics Curve and AUC stands for Area Under the Curve.
-
-The ROC curve is plotted with TPR and FPR, where TPR (True Positive Rate) on Y-axis and FPR(False Positive Rate) on X-axis.
-
-
-
----
-### Linear Model
-#### Logistic Regression
-
->$$ 
-f(x)=\frac{1}{1+e^{-x}}
-$$
-uses sigmoid function or logistic function which is a complex cost function
-f(x)= Output between the 0 and 1 value.
-x= input to the function
-e= base of natural logarithm.
-
-Logistic Function (Sigmoid Function)
-In logistic regression, we use the concept of the threshold value, which defines the probability of either 0 or 1. Such as values above the threshold value tends to 1, and a value below the threshold values tends to 0.
-
-Assumptions 
-The dependent variable must be categorical in nature.
-The independent variable should not have multi-collinearity.
-
-##### Binomial
-In binomial Logistic regression, there can be only two possible types of the dependent variables, such as 0 or 1, Pass or Fail, etc.
-
-Steps:
-
-1. Data Pre-processing step
-
-```python
-#Data Pre-procesing Step  
-# importing libraries  
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd  
-  
-#importing datasets  
-data_set= pd.read_csv('/Users/haleyk/Documents/Python_Libraries_for_ML/Python_Libraries_for_ML/Supervised Learning/Classification/Logistics Regression/User_Data.csv')  
-
-#Extracting Independent and dependent Variable  
-x= data_set.iloc[:, [2,3]].values  
-y= data_set.iloc[:, 4].values  
-
-# Splitting the dataset into training and test set.  
-from sklearn.model_selection import train_test_split  
-x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.25, random_state=0)  
-
-#feature Scaling  
-from sklearn.preprocessing import StandardScaler    
-st_x= StandardScaler()    
-x_train= st_x.fit_transform(x_train)    
-x_test= st_x.transform(x_test)
-
-# return
-User ID	Gender	Age	EstimatedSalary	Purchased
-0	15624510	Male	19	19000	0
-1	15810944	Male	35	20000	0
-2	15668575	Female	26	43000	0
-3	15603246	Female	27	57000	0
-4	15804002	Male	19	76000	0
-...	...	...	...	...	...
-395	15691863	Female	46	41000	1
-396	15706071	Male	51	23000	1
-397	15654296	Female	50	20000	1
-398	15755018	Male	36	33000	0
-399	15594041	Female	49	36000	1
-400 rows × 5 columns
-```
-
-2. Fitting Logistic Regression to the Training set
-
-```python
-#Fitting Logistic Regression to the training set  
-from sklearn.linear_model import LogisticRegression  
-classifier= LogisticRegression(random_state=0)  
-classifier.fit(x_train, y_train)  
-
-LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,  
-                   intercept_scaling=1, l1_ratio=None, max_iter=100,  
-                   multi_class='warn', n_jobs=None, penalty='l2',  
-                   random_state=0, solver='warn', tol=0.0001, verbose=0,  
-                   warm_start=False)  
-```
-
-
-3. Predicting the test result
-
-```python
-#Predicting the test set result  
-y_pred= classifier.predict(x_test)  
-```
-
-4. Test accuracy of the result(Creation of Confusion matrix)
-
-```python
-#Creating the Confusion matrix  
-from sklearn.metrics import confusion_matrix  
-cm= confusion_matrix(y_test, y_pred)  
-```
-
-5. Visualizing the test set result
-
-```python
-#Visualizing the training set result  
-from matplotlib.colors import ListedColormap  
-x_set, y_set = x_train, y_train  
-x1, x2 = np.meshgrid(np.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),  
-np.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))  
-plt.contourf(x1, x2, classifier.predict(np.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),  
-alpha = 0.75, cmap = ListedColormap(('purple','green' )))  
-plt.xlim(x1.min(), x1.max())  
-plt.ylim(x2.min(), x2.max())  
-for i, j in enumerate(np.unique(y_set)):  
-    plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],  
-        c = ListedColormap(('purple', 'green'))(i), label = j)  
-plt.title('Logistic Regression (Training set)')  
-plt.xlabel('Age')  
-plt.ylabel('Estimated Salary')  
-plt.legend()  
-plt.show()  
-```
-
-![请添加图片描述](https://img-blog.csdnimg.cn/c800320380c346ff9b700a10270cf9de.png)
-
-##### Multinomial
-In multinomial Logistic regression, there can be 3 or more possible unordered types of the dependent variable, such as "cat", "dogs", or "sheep"
-
-```python
-from sklearn.datasets import load_digits
-%matplotlib inline
-import matplotlib.pyplot as plt
-digits = load_digits()
-
-dir(digits)
-
-digits.data[0] #number 0
-```
-
-
-```python
-from sklearn.linear_model import LogisticRegression
-model = LogisticRegression()
-
-from sklearn.model_selection import train_test_split
-
-X_train, X_test, y_train, y_test = train_test_split(digits.data,digits.target, test_size=0.2)
-
-model.fit(X_train, y_train)
-```
-
-```python
-model.score(X_test, y_test)
-
-# return
-0.9694444444444444
-```
-
-```python
-y_predicted = model.predict(X_test)
-from sklearn.metrics import confusion_matrix
-cm = confusion_matrix(y_test, y_predicted)
-cm
-
-import seaborn as sn
-plt.figure(figsize = (10,7))
-sn.heatmap(cm, annot=True)
-plt.xlabel('Predicted')
-plt.ylabel('Truth')
-```
-
-![请添加图片描述](https://img-blog.csdnimg.cn/e415f24d05384c9196546ad41226cfc4.png#pic_center)
-
-
-##### Ordinal
-In ordinal Logistic regression, there can be 3 or more possible ordered types of dependent variables, such as "low", "Medium", or "High".
-
+[HTML format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.html)
+<br>
+[Markdown format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.md)
+<br>
+[PDF format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.pdf)
 
 ---
 
+<<<<<<<< HEAD:MachineLearning.md
 ### Non-linear Model
 
 #### Lazy Learners: K-Nearest Neighbours
@@ -1070,10 +656,23 @@ Text(69.0, 0.5, 'Truth')
 ```
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/1e16a1d1bd6f4183adaa72deec598d2e.png#pic_center)
+========
+## 📝 Changelog
+- __[2022.08.15]__: Release the project.
+- __[2023.09.03]__: Update the main content.
+- __[2023.02.01]__: Update the remaining content on Supervised Learning.
+- __[2023.04.17]__: Finalize the project details.
+
+## 📭  Contact
+If your have any comments or questions, feel free to contact kwokhinchi@gmail.com 
+>>>>>>>> 0de57b29d9f6009164ad5b23088f6f6afdfbb5e0:README.md
 
 ---
 
+## 📖 Acknowledgements
+Python Libraries for Machine Learning is an open source project, contributed by our team. We thank all contributors who implemented their methods or added new features, as well as users who provided valuable feedback. We hope for further implementation and improvement of these systems.
 
+<<<<<<<< HEAD:MachineLearning.md
 #### Eager Learners: Naïve Bayes
 ##### Bernoulli, Multinomial and Gaussian Naive Bayes
 - Multinomial Naïve Bayes consider a feature vector where a given term represents the number of times it appears or very often i.e. frequency. 
@@ -1434,12 +1033,19 @@ st_x= StandardScaler()
 x_train= st_x.fit_transform(x_train)    
 x_test= st_x.transform(x_test)  
 ```
+========
+Permission is hereby granted, free of charge, to any person obtaining a copy of this Repository and associated documentation files, to deal in the Repository without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Repository is furnished to do so.
+>>>>>>>> 0de57b29d9f6009164ad5b23088f6f6afdfbb5e0:README.md
+
+The authors or copyright holders are not be liable for any claim, damages or other liabillty, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Repository or the use or other dealings in the Repository.
 
 
-
+## 📢 Disclaimer
+We develop this repository for Self-learning purposes, so it can only be used for personal/research/non-commercial purposes.
 
 ---
 
+<<<<<<<< HEAD:MachineLearning.md
 ## Dimensionality Reduction
 ![请添加图片描述](https://img-blog.csdnimg.cn/fa8bb72e02264453a9167d9352a7ea78.png)
 
@@ -2198,3 +1804,6 @@ scores.mean()
 [Javapoint: Machine Learning](https://www.javatpoint.com/supervised-machine-learning)
 
 [Scikit-learn](https://scikit-learn.org/stable/user_guide.html)
+========
+Copyright © [Haley Kwok](https://github.com/HaleyKwok). All rights reserved.
+>>>>>>>> 0de57b29d9f6009164ad5b23088f6f6afdfbb5e0:README.md
