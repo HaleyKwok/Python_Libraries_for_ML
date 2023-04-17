@@ -29,7 +29,7 @@ Machine Learning has become an increasingly popular field in recent years, with 
 
 - Dimensionality Reduction: This section covers different dimensionality reduction techniques such as filters, wrappers, embedded methods, Lasso Regression, Ridge Regression, feature extraction, and principal component analysis (PCA).
 
-- [Unsupervised Learning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning)_: This section covers different unsupervised learning techniques such as clustering, partitioning clustering, density-based clustering, distribution model-based clustering, hierarchical clustering/agglomerative hierarchical clustering, fuzzy clustering, and association.
+- [Unsupervised Learning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning): This section covers different unsupervised learning techniques such as clustering, partitioning clustering, density-based clustering, distribution model-based clustering, hierarchical clustering/agglomerative hierarchical clustering, fuzzy clustering, and association.
 
 - [Hyperparameter Tuning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Hyperparameter%20Tuning): This section covers different approaches for hyperparameter tuning such as train_test_split, K Fold Cross validation, GridSearchCV, RandomizedSearchCV, and using different models with different parameters.
 
