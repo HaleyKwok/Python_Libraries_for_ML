@@ -13,28 +13,27 @@ Machine Learning has become an increasingly popular field in recent years, with 
 
 ## 🥳 Gallery
 
-- Data Preprocessing
-This section covers the basics of data preprocessing in Machine Learning.
-- Supervised Learning
-This section covers the basics of supervised learning in Machine Learning.
-- Regression
-This section covers different regression techniques such as linear regression, simple linear regression, multiple linear regression, polynomial regression, support vector regression, and decision trees regression.
-- Classification
-This section covers the basics of classification in Machine Learning, binary and multi-class classifier, and the different learners in classification problems such as lazy and eager learners.
-- Evaluating a Classification Model
-This section covers different evaluation metrics such as log loss or cross-entropy loss, confusion matrix, and AUC-ROC curve.
-- Linear Model
-This section covers different linear models such as logistic regression, binomial, multinomial, ordinal.
-- Non-linear Model
-This section covers different non-linear models such as K-Nearest Neighbors (KNN), decision trees, random forest, and Naïve Bayes.
-- Dimensionality Reduction
-This section covers different dimensionality reduction techniques such as filters, wrappers, embedded methods, Lasso Regression, Ridge Regression, feature extraction, and principal component analysis (PCA).
-- Unsupervised Learning
-This section covers different unsupervised learning techniques such as clustering, partitioning clustering, density-based clustering, distribution model-based clustering, hierarchical clustering/agglomerative hierarchical clustering, fuzzy clustering, and association.
-- Hyperparameter Tuning
-This section covers different approaches for hyperparameter tuning such as train_test_split, K Fold Cross validation, GridSearchCV, RandomizedSearchCV, and using different models with different parameters.
-- Bagging/Ensemble Learning
-This section covers different ensemble learning techniques such as bagging.
+- Data Preprocessing: This section covers the basics of data preprocessing in Machine Learning.
+
+- Supervised Learning: This section covers the basics of supervised learning in Machine Learning.
+
+- Regression: This section covers different regression techniques such as linear regression, simple linear regression, multiple linear regression, polynomial regression, support vector regression, and decision trees regression.
+
+- Classification: This section covers the basics of classification in Machine Learning, binary and multi-class classifier, and the different learners in classification problems such as lazy and eager learners.
+
+- Evaluating a Classification Model: This section covers different evaluation metrics such as log loss or cross-entropy loss, confusion matrix, and AUC-ROC curve.
+
+- Linear Model: This section covers different linear models such as logistic regression, binomial, multinomial, ordinal.
+
+- Non-linear Model: This section covers different non-linear models such as K-Nearest Neighbors (KNN), decision trees, random forest, and Naïve Bayes.
+
+- Dimensionality Reduction: This section covers different dimensionality reduction techniques such as filters, wrappers, embedded methods, Lasso Regression, Ridge Regression, feature extraction, and principal component analysis (PCA).
+
+- Unsupervised Learning: This section covers different unsupervised learning techniques such as clustering, partitioning clustering, density-based clustering, distribution model-based clustering, hierarchical clustering/agglomerative hierarchical clustering, fuzzy clustering, and association.
+
+- Hyperparameter Tuning: This section covers different approaches for hyperparameter tuning such as train_test_split, K Fold Cross validation, GridSearchCV, RandomizedSearchCV, and using different models with different parameters.
+
+- Bagging/Ensemble Learning: This section covers different ensemble learning techniques such as bagging.
 
 ---
 
@@ -44,7 +43,7 @@ This section covers different ensemble learning techniques such as bagging.
 - __[2023.02.01]__: Update the remaining content on Supervised Learning.
 - __[2023.04.17]__: Finalize the project details.
 
-## 📭 Contact
+## 📭  Contact
 If your have any comments or questions, feel free to contact kwokhinchi@gmail.com 
 
 ---
@@ -63,4 +62,3 @@ We develop this repository for Assignment purposes, so it can only be used for p
 ---
 
 Copyright © [Haley Kwok](https://github.com/HaleyKwok). All rights reserved.
-
