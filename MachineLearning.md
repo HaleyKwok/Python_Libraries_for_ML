@@ -964,19 +964,10 @@ st_x= StandardScaler()
 x_train= st_x.fit_transform(x_train)    
 x_test= st_x.transform(x_test)  
 ```
-========
-Permission is hereby granted, free of charge, to any person obtaining a copy of this Repository and associated documentation files, to deal in the Repository without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Repository is furnished to do so.
->>>>>>>> 0de57b29d9f6009164ad5b23088f6f6afdfbb5e0:README.md
 
-The authors or copyright holders are not be liable for any claim, damages or other liabillty, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Repository or the use or other dealings in the Repository.
-
-
-## 📢 Disclaimer
-We develop this repository for Self-learning purposes, so it can only be used for personal/research/non-commercial purposes.
 
 ---
 
-<<<<<<<< HEAD:MachineLearning.md
 ## Dimensionality Reduction
 ![请添加图片描述](https://img-blog.csdnimg.cn/fa8bb72e02264453a9167d9352a7ea78.png)
 
