@@ -170,6 +170,7 @@ sepal length (cm)	sepal width (cm)	petal length (cm)	petal width (cm)	target	flo
 3	4.6	3.1	1.5	0.2	0	setosa
 4	5.0	3.6	1.4	0.2	0	setosa
 ```
+	
 
 2. Fitting the K-NN algorithm to the Training set
 
@@ -600,23 +601,9 @@ Text(69.0, 0.5, 'Truth')
 ```
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/1e16a1d1bd6f4183adaa72deec598d2e.png#pic_center)
-========
-## 📝 Changelog
-- __[2022.08.15]__: Release the project.
-- __[2023.09.03]__: Update the main content.
-- __[2023.02.01]__: Update the remaining content on Supervised Learning.
-- __[2023.04.17]__: Finalize the project details.
 
-## 📭  Contact
-If your have any comments or questions, feel free to contact kwokhinchi@gmail.com 
->>>>>>>> 0de57b29d9f6009164ad5b23088f6f6afdfbb5e0:README.md
+	
 
----
-
-## 📖 Acknowledgements
-Python Libraries for Machine Learning is an open source project, contributed by our team. We thank all contributors who implemented their methods or added new features, as well as users who provided valuable feedback. We hope for further implementation and improvement of these systems.
-
-<<<<<<<< HEAD:MachineLearning.md
 #### Eager Learners: Naïve Bayes
 ##### Bernoulli, Multinomial and Gaussian Naive Bayes
 - Multinomial Naïve Bayes consider a feature vector where a given term represents the number of times it appears or very often i.e. frequency. 
