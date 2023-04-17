@@ -1,7 +1,12 @@
-# Python_Libraries_for_ML
+---
+html:
+    toc: true
+---
 
-- [Python\_Libraries\_for\_ML](#python_libraries_for_ml)
-- [Data Preprocessing](#data-preprocessing)
+<span style = 'font-family: Times New Roman'>
+Python_Libraries_for_ML by Haley Kwok
+
+TABLE OF CONTENT
 - [Supervised Learning](#supervised-learning)
   - [Regression](#regression)
   - [Terminologies](#terminologies)
@@ -30,7 +35,7 @@
       - [Lazy Learners: K-Nearest Neighbours](#lazy-learners-k-nearest-neighbours)
       - [Eager Learners: Decision Trees](#eager-learners-decision-trees)
         - [Terminologies](#terminologies-1)
-        - [Random Forest \[Overfitting\]](#random-forest-overfitting)
+        - [Random Forest :Overfitting](#random-forest-overfitting)
       - [Eager Learners: Naïve Bayes](#eager-learners-naïve-bayes)
         - [Bernoulli, Multinomial and Gaussian Naive Bayes](#bernoulli-multinomial-and-gaussian-naive-bayes)
         - [Assumption](#assumption)
@@ -42,8 +47,8 @@
       - [Filters Methods](#filters-methods)
       - [Wrappers Methods](#wrappers-methods)
       - [Embedded Methods](#embedded-methods)
-    - [Lasso Regression/ L1 regularization \[Reduce complexity\]](#lasso-regression-l1-regularization-reduce-complexity)
-    - [Ridge Regression/ L2 regularization \[Reduce complexity\]](#ridge-regression-l2-regularization-reduce-complexity)
+    - [Lasso Regression/ L1 regularization: Reduce complexity](#lasso-regression-l1-regularization-reduce-complexity)
+    - [Ridge Regression/ L2 regularization: Reduce complexity](#ridge-regression-l2-regularization-reduce-complexity)
   - [Feature Extractions](#feature-extractions)
     - [Principal Component Analysis (Unsupervised Learning)](#principal-component-analysis-unsupervised-learning)
     - [Linear Discriminant Analysis](#linear-discriminant-analysis)
@@ -70,7 +75,12 @@
 - [Bagging/ Ensemble Learning](#bagging-ensemble-learning)
 - [References](#references)
  
-# Data Preprocessing
+
+
+
+
+
+
 
 # Supervised Learning
 Supervised learning is the types of machine learning in which machines are trained using well "labelled" training data, and on basis of that data, machines predict the output. The labelled data means some input data is already tagged with the correct output.
@@ -983,7 +993,7 @@ model.score(X_test,y_test)
 0.8044692737430168
 ```
 
-##### Random Forest [Overfitting]
+##### Random Forest :Overfitting
 - is one of the most powerful supervised learning algorithms which is capable of performing regression as well as classification tasks.
 - is an ensemble learning method which combines multiple decision trees and predicts the final output based on the average of each tree output. The combined decision trees are called as base models.
 - uses `Bagging` or `Bootstrap Aggregation` technique of ensemble learning in which aggregated decision tree runs in parallel and do not interact with each other.
@@ -1224,18 +1234,18 @@ array([0.784     , 0.808     , 0.784     , 0.76612903, 0.82258065])
 #### Support Vector Machines (SVM)
 Support Vector Machine is a supervised learning algorithm which can be used for regression as well as classification problems. So if we use it for regression problems, then it is termed as Support Vector Regression.
 
-![请添加图片描述](https://img-blog.csdnimg.cn/dbfe9183bb7141c78ff7c4c23e6dcaac.png#pic_center)
+<center><img src = 'SVM3.png' width = 350></center>
 
-[Photo Source](https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F600%2F0*xZjrNjcCtqGLrLMi.png&imgrefurl=https%3A%2F%2Fmedium.com%2Fessence-of-learning%2Fintuition-behind-support-vector-regression-3601f670a2ef&tbnid=lStYOlt4tGkjAM&vet=12ahUKEwiEtuCh0_D5AhVF82EKHQ5TDQMQMygJegUIARDtAQ..i&docid=APH06m_fdNvuHM&w=600&h=400&q=support%20vector%20regression&client=safari&ved=2ahUKEwiEtuCh0_D5AhVF82EKHQ5TDQMQMygJegUIARDtAQ#)
+<center><img src = 'SVM1.png' width = 350></center>
 
+[Photo Source](https://www.javatpoint.com/machine-learning-support-vector-machine-algorithm)
 
 ##### Linear SVM
 Linear SVM is used for linearly separable data, which means if a dataset can be classified into two classes by using a single straight line, then such data is termed as linearly separable data, and classifier is used called as Linear SVM classifier.
 
 
-![请添加图片描述](https://img-blog.csdnimg.cn/0c453b53fc474553a29c13b72b35d9b1.png#pic_center)
 
-[Photo Source](https://www.javatpoint.com/machine-learning-support-vector-machine-algorithm)
+
 
 
 
@@ -1391,9 +1401,9 @@ model_linear_kernal.score(X_test, y_test)
 ##### Non-linear SVM (Kernel SVM)
 Non-Linear SVM is used for non-linearly separated data, which means if a dataset cannot be classified by using a straight line, then such data is termed as non-linear data and classifier used is called as Non-linear SVM classifier.
 
+<center><img src = 'SVM2.png' width = 350></center>
 
-
-[Photo Source](https://www.javatpoint.com/machine-learning-support-vector-machine-algorithm)![请添加图片描述](https://img-blog.csdnimg.cn/e063eccbd08648359f2e7f89e5ca1662.png#pic_center)
+[Photo Source](https://www.javatpoint.com/machine-learning-support-vector-machine-algorithm)
 
 To separate these data points, we need to add one more dimension. For linear data, we have used two dimensions x and y, so for non-linear data, we will add a third dimension z. 
 
@@ -1458,7 +1468,7 @@ Embedded methods check the different training iterations of the machine learning
 
 Elastic Net
 
-### Lasso Regression/ L1 regularization [Reduce complexity]
+### Lasso Regression/ L1 regularization: Reduce complexity
 - penalty term contains only the absolute weights 
 - can only shrink the slope to 0 because of taking absolute values
 > $$ Loss = Error(Y - \widehat{Y}) + \lambda \sum_1^n |w_i| $$
@@ -1480,7 +1490,7 @@ lasso_reg.score(train_X, train_y)
 
 
 ---
-### Ridge Regression/ L2 regularization [Reduce complexity]
+### Ridge Regression/ L2 regularization: Reduce complexity
 - a general linear or polynomial regression will fail if there is high collinearity between the independent variables
 - penalty term contains a square of weights
 - shrink the slope near to 0
