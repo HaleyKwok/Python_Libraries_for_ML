@@ -1,4 +1,4 @@
-# Python_Libraries_for_ML
+# Python Libraries for Machine Learning
 
 ## 📍 Mission
 The mission of this repository is to provide a comprehensive and organized collection of information on commonly used Python libraries in the field of Machine Learning. The repository is designed to be user-friendly and easily accessible, with each section covering a specific topic related to Machine Learning, such as data preprocessing, supervised learning, and hyperparameter tuning. Our goal is to enable individuals, whether they are beginners or experts in the field of Machine Learning, to find the information they need quickly and efficiently. We strive to ensure that the information in this repository is up-to-date and accurate, so that users can confidently rely on it in their work and research.
@@ -13,25 +13,25 @@ Machine Learning has become an increasingly popular field in recent years, with 
 
 ## 🥳 Gallery
 
-- Data Preprocessing: This section covers the basics of data preprocessing in Machine Learning.
+- [Data Preprocessing](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/6%20One-hot%20Encoder.ipynb): This section covers the basics of data preprocessing in Machine Learning.
 
-- Supervised Learning: This section covers the basics of supervised learning in Machine Learning.
+- [Supervised Learning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Supervised%20Learning): This section covers the basics of supervised learning in Machine Learning.
 
-- Regression: This section covers different regression techniques such as linear regression, simple linear regression, multiple linear regression, polynomial regression, support vector regression, and decision trees regression.
+- [Regression](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Supervised%20Learning/Linear%20Regression): This section covers different regression techniques such as linear regression, simple linear regression, multiple linear regression, polynomial regression, support vector regression, and decision trees regression.
 
-- Classification: This section covers the basics of classification in Machine Learning, binary and multi-class classifier, and the different learners in classification problems such as lazy and eager learners.
+- [Classification](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Supervised%20Learning/Classification): This section covers the basics of classification in Machine Learning, binary and multi-class classifier, and the different learners in classification problems such as lazy and eager learners.
 
 - Evaluating a Classification Model: This section covers different evaluation metrics such as log loss or cross-entropy loss, confusion matrix, and AUC-ROC curve.
 
 - Linear Model: This section covers different linear models such as logistic regression, binomial, multinomial, ordinal.
 
-- Non-linear Model: This section covers different non-linear models such as K-Nearest Neighbors (KNN), decision trees, random forest, and Naïve Bayes.
+- [Non-linear Model](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning/KNN): This section covers different non-linear models such as K-Nearest Neighbors (KNN), decision trees, random forest, and Naïve Bayes.
 
 - Dimensionality Reduction: This section covers different dimensionality reduction techniques such as filters, wrappers, embedded methods, Lasso Regression, Ridge Regression, feature extraction, and principal component analysis (PCA).
 
-- Unsupervised Learning: This section covers different unsupervised learning techniques such as clustering, partitioning clustering, density-based clustering, distribution model-based clustering, hierarchical clustering/agglomerative hierarchical clustering, fuzzy clustering, and association.
+- [Unsupervised Learning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Unsupervised%20Learning)_: This section covers different unsupervised learning techniques such as clustering, partitioning clustering, density-based clustering, distribution model-based clustering, hierarchical clustering/agglomerative hierarchical clustering, fuzzy clustering, and association.
 
-- Hyperparameter Tuning: This section covers different approaches for hyperparameter tuning such as train_test_split, K Fold Cross validation, GridSearchCV, RandomizedSearchCV, and using different models with different parameters.
+- [Hyperparameter Tuning](https://github.com/HaleyKwok/Python_Libraries_for_ML/tree/main/Hyperparameter%20Tuning): This section covers different approaches for hyperparameter tuning such as train_test_split, K Fold Cross validation, GridSearchCV, RandomizedSearchCV, and using different models with different parameters.
 
 - Bagging/Ensemble Learning: This section covers different ensemble learning techniques such as bagging.
 
