@@ -41,7 +41,9 @@ Machine Learning has become an increasingly popular field in recent years, with 
 ## 📋 Notes
 
 [HTML format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.html)
+<br>
 [Markdown format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.md)
+<br>
 [PDF format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.pdf)
 
 ---
