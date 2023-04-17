@@ -45,6 +45,8 @@ Machine Learning has become an increasingly popular field in recent years, with 
 <br>
 [PDF format](https://github.com/HaleyKwok/Python_Libraries_for_ML/blob/main/MachineLearning.pdf)
 
+---
+
 ## 📝 Changelog
 - __[2022.08.15]__: Release the project.
 - __[2023.09.03]__: Update the main content.
@@ -60,6 +62,15 @@ If your have any comments or questions, feel free to contact kwokhinchi@gmail.co
 ## 📖 Acknowledgements
 Python Libraries for Machine Learning is an open source project, contributed by our team. We thank all contributors who implemented their methods or added new features, as well as users who provided valuable feedback. We hope for further implementation and improvement of these systems.
 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this Repository and associated documentation files, to deal in the Repository without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Repository is furnished to do so.
+
+
+The authors or copyright holders are not be liable for any claim, damages or other liabillty, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Repository or the use or other dealings in the Repository.
+
+
+## 📢 Disclaimer
+We develop this repository for Self-learning purposes, so it can only be used for personal/research/non-commercial purposes.
 
 
 ---
